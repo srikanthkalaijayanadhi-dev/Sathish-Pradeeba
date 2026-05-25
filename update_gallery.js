@@ -11,8 +11,7 @@ const newUrls = [
   'https://res.cloudinary.com/dtbm1sjoo/image/upload/v1779693681/ChatGPT_Image_May_25_2026_12_42_41_PM_q8d6oc.png',
   'https://res.cloudinary.com/dtbm1sjoo/image/upload/v1779686562/ChatGPT_Image_May_23_2026_04_04_08_PM_wagk7o.png',
   'https://res.cloudinary.com/dtbm1sjoo/image/upload/v1779686570/ChatGPT_Image_May_24_2026_04_12_33_AM_wzqiq4.png',
-  'https://res.cloudinary.com/dtbm1sjoo/image/upload/v1779693823/ChatGPT_Image_May_23_2026_04_48_34_PM_l9dugf.png',
-  'https://res.cloudinary.com/dtbm1sjoo/image/upload/v1779693796/ChatGPT_Image_May_23_2026_04_30_14_PM_n9tsn6.png'
+
 ];
 
 // Find the Temple Gallery section
