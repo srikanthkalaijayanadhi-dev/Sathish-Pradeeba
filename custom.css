@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Tamil:ital@0;1&family=Noto+Serif+Tamil:wght@400;500;600;700;800&display=swap');
+
+.font-tamil-serif { font-family: 'Tiro Tamil', serif; }
+.font-tamil-display { font-family: 'Noto Serif Tamil', 'Tiro Tamil', serif; }
+/* Custom animations for Lovable template replica */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-up {
+    opacity: 0;
+    animation: fadeUp 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+@keyframes float {
+    0% { transform: translateY(0) translateX(0) rotate(0deg); opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { transform: translateY(150px) translateX(50px) rotate(180deg); opacity: 0; }
+}
+
+.animate-float {
+    animation: float 20s infinite ease-in-out;
+}
+
+@keyframes bellSwing {
+    0%, 100% { transform: rotate(-8deg); }
+    50% { transform: rotate(8deg); }
+}
+
+.animate-bell {
+    animation: bellSwing 5s infinite ease-in-out;
+    transform-origin: top center;
+}
+
+@keyframes flameFlicker {
+    0% { transform: scale(1) translateY(0); opacity: 0.8; }
+    100% { transform: scale(1.05) translateY(-2px); opacity: 1; }
+}
+
+.animate-flame {
+    animation: flameFlicker 0.15s infinite alternate;
+}
+
+@keyframes pulseGlow {
+    0% { opacity: 0.6; transform: scale(1) translateX(-50%); }
+    100% { opacity: 1; transform: scale(1.3) translateX(-40%); }
+}
+
+.animate-pulse-glow {
+    animation: pulseGlow 2s infinite alternate;
+}
+
+@keyframes shimmer {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+}
+
+.animate-shimmer {
+    animation: shimmer 3s infinite linear;
+}
+
+@keyframes zoomIn {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+}
+
+.animate-zoom {
+    animation: zoomIn 20s infinite alternate linear;
+}
+
+/* Fix RSVP form layout if any */
+html {
+    scroll-behavior: smooth;
+}
+
+@keyframes floatSubtle {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+    /* Scale down hero text slightly to prevent overflow on very small devices */
+    h1.text-6xl {
+        font-size: clamp(3rem, 15vw, 3.75rem) !important;
+    }
+    
+    /* Make countdown fit nicely on small screens */
+    .grid-cols-2 > .glass-temple {
+        padding: 1rem 0.5rem;
+    }
+    .grid-cols-2 .text-5xl {
+        font-size: 2.5rem !important;
+    }
+    
+    /* Adjust spacing for timeline */
+    .pl-12 {
+        padding-left: 2rem !important;
+    }
+    
+    /* Ensure gallery images maintain aspect ratio without stretching */
+    .auto-rows-\[280px\] {
+        grid-auto-rows: 200px !important;
+    }
+    
+    /* Adjust preloader font size */
+    .font-deva.text-2xl {
+        font-size: 1.25rem !important;
+    }
+}
+
+/* Fix RSVP button z-index on mobile so it doesn't overlap important text */
+@media (max-width: 640px) {
+    .fixed.bottom-0 {
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+}
+
+.font-tamil { font-family: 'Kavivanar', 'Tiro Tamil', serif; }
+.tamil-title { text-shadow: 2px 2px 8px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.8), 0 0 30px rgba(0,0,0,0.6); font-weight: 700; }
+
+
+
+    100% { left: 150%; }
+}
+    100% { left: 200%; }
+}
+
+
+/* Global Mobile Overflows Fix */
+html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
